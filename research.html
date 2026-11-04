@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Research – Taeyeong Kim</title>
+	<meta name="description" content="Research and publications of Taeyeong Kim.">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<main class="page">
+		<nav class="nav">
+			<a href="index.html">Home</a>
+			<a href="research.html" class="active">Research</a>
+		</nav>
+
+		<div class="content">
+			<h2>Research</h2>
+			<p>I'm interested in <b>model interpretability</b>: where knowledge and behavior live inside a model, and how to read them out of its weights and activations.</p>
+
+			<p>This page contains a selection of papers I've worked on. I'll try to update it periodically. The full list is on <a href="https://scholar.google.com/citations?user=XWC7gFkAAAAJ&amp;hl=ko" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+			<div class="papers">
+				<div class="paper">
+					<div>
+						<h3>
+							<span>Where Do Distilled Students Store Thinking?</span><a href="https://arxiv.org/abs/2611.04141" target="_blank" rel="noopener">[arXiv]</a>
+							<br>
+							<span class="paper-venue">arXiv 2026</span>
+						</h3>
+						<h3 class="paper-authors"><b>Taeyeong Kim</b>, Jaemin Jung, Ahhyun Kim, Unggi Lee</h3>
+					</div>
+					<img class="paper-figure" src="assets/images/research/distilled-thinking.svg" alt="Overview figure for Where Do Distilled Students Store Thinking?">
+					<div class="paper-summary">
+						Recent work shortens a reasoning model's long solutions by interpolating it with a short-answer model. We ask what a distilled student's LoRA weights keep when the teacher stops thinking, and find a shared adapter subspace tied to thinking-like behavior. Removing that subspace largely turns the behavior off for every student and benchmark we test.
+					</div>
+				</div>
+
+				<div class="paper">
+					<div>
+						<h3>
+							<span>SpecialEduBench: Benchmarking Vision-Language Models on Knowledge, Skill, and Attitude in Language Intervention for Autistic Children</span><a href="https://arxiv.org/abs/2609.26090" target="_blank" rel="noopener">[arXiv]</a>
+							<br>
+							<span class="paper-venue">arXiv 2026</span>
+						</h3>
+						<h3 class="paper-authors">Jihoi Na, <b>Taeyeong Kim</b>, Sungjune Kong, Jaemin Jung, Min Joung Park, Kyungtae Joo, Ahhyun Kim, Shim Jaechang, Sooyoung Joo, Dongjin Ka, SeJoong Kim, Jimin Kim, HyunJin Jung, Unggi Lee</h3>
+					</div>
+					<img class="paper-figure" src="assets/images/research/specialedubench.png" alt="Overview of SpecialEduBench">
+					<div class="paper-summary">
+						We build a benchmark that measures whether vision-language models can act as teachers in language intervention for autistic children, along knowledge, skill, and attitude. Seven special-education experts wrote, scored, and reviewed the items. Across eight frontier models no axis is saturated, and failures cluster where pressure is applied.
+					</div>
+				</div>
+
+				<div class="paper">
+					<div>
+						<h3>
+							<span>Not the Dimension, the Norm: What Matters in Gradient-Free Weight Perturbation of Language Models</span><a href="https://arxiv.org/abs/2608.01624" target="_blank" rel="noopener">[arXiv]</a>
+							<br>
+							<span class="paper-venue">arXiv 2026</span>
+						</h3>
+						<h3 class="paper-authors"><b>Taeyeong Kim</b>, Ahhyun Kim, TaeHyeon Kim, Unggi Lee</h3>
+					</div>
+					<img class="paper-figure" src="assets/images/research/perturbation-norm.svg" alt="Overview of the gradient-free perturbation testbed">
+					<div class="paper-summary">
+						Gradient-free adaptation samples random weight perturbations and keeps the ones that score well. Changing one factor at a time, we find that perturbing only 12 to 16 scalars comes close to full-weight search, and that neither the dimension nor the choice of basis explains performance. What matters is the perturbation norm, whose safe range transfers across model scale and family.
+					</div>
+				</div>
+
+				<div class="paper">
+					<div>
+						<h3>
+							<span>Pedagogical Alignment for Vision-Language-Action Models: A Comprehensive Framework for Data, Architecture, and Evaluation in Education</span><a href="https://arxiv.org/abs/2601.13876" target="_blank" rel="noopener">[arXiv]</a>
+							<br>
+							<span class="paper-venue">arXiv 2026</span>
+						</h3>
+						<h3 class="paper-authors">Unggi Lee, Jahyun Jeong, Sunyoung Shin, Haeun Park, Jeongsu Moon, Youngchang Song, Jaechang Shim, JaeHwan Lee, Yunju Noh, Seungwon Choi, Ahhyun Kim, TaeHyeon Kim, Kyungtae Joo, <b>Taeyeong Kim</b><sup>*</sup>, Gyeonggeon Lee</h3>
+						<div class="paper-note"><sup>*</sup>Corresponding author</div>
+					</div>
+					<img class="paper-figure" src="assets/images/research/pedagogical-vla.png" alt="Overview of the Pedagogical VLA Framework">
+					<div class="paper-summary">
+						We adapt lightweight vision-language-action models for classroom science demonstrations by restoring their language generation, distilling pedagogical knowledge from an LLM, and adding safety training. Across five demonstrations in physics, chemistry, biology, and earth science, the framework matches baseline task performance while producing fitting educational explanations.
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
