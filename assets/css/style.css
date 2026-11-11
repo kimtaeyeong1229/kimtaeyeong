@@ -204,3 +204,20 @@ hr {
         padding: 0 4rem;
     }
 }
+
+/* ======= Footer ======= */
+.footer {
+    padding: 1rem 0 2rem;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+.footer a {
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 1rem 4rem 2rem;
+    }
+}
